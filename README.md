@@ -1,7 +1,7 @@
 apt-add-repository
 ==================
 
-# Translates Ubuntu "PPAs" into standard Deb package configurations -- without the Ubuntu.
+**Translates Ubuntu "PPAs" into standard Deb package configurations -- without the Ubuntu.**
 A very simple program which does exactly that.  apt-add-repository takes "ppa:something/program" and turns it into "deb http://ppa.launchpad.net/something/program/ubuntu trusty main" or similar.
 
 # How to use
