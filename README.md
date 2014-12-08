@@ -6,6 +6,7 @@ A very simple program which does exactly that.  apt-add-repository takes "ppa:so
 
 # How to use
 **apt-add-repository ppa:something/program [OPTIONS]**
+
 Command line options:
 
 -h | --help | help Print a help text.
