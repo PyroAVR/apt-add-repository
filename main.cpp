@@ -1,5 +1,5 @@
 /*
-  apt-add-repo by PyroAVR
+  apt-add-repo by Andy "PyroAVR" Meyer
   A simple tool which allows installation of Ubuntu "PPA" repositories on Debian-derivative systems.
   Probably also works with any system that uses the Advanced Package Tool (APT).
 
@@ -81,7 +81,7 @@ int main(int argc, char *argv[])	{
 	cin >> response;
 	if (response == 'N') xabort();				//Confirm with the user.
 	fstream sources;
-	sources.open("/etc/apt/sources.list", fstream::out);	//Open the sources file for writing
+	sources.open("/etc/apt/sources.list", fstream::out| fstream::app);	//Open the sources file for writing. Append, DO NOT overwrite.
 	if (sources.fail())
 	{
 		sources.close();
