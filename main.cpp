@@ -79,7 +79,7 @@ int main(int argc, char *argv[])	{
 	cout << "Adding PPA repository: " << entry << " ." << endl;
 	cout << "Is this correct?[Y/N]" ;
 	cin >> response;
-	if (response == 'N') xabort();				//Confirm with the user.
+	if (response == 'N' || response == 'n') xabort();				//Confirm with the user.
 	fstream sources;
 	sources.open("/etc/apt/sources.list", fstream::out| fstream::app);	//Open the sources file for writing. Append, DO NOT overwrite.
 	if (sources.fail())
