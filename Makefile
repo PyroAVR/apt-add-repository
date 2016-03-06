@@ -1,7 +1,7 @@
 #change this to g++ by making with 
 # CC=g++ make all
 
-CC=clang++-3.7
+CC=clang++
 
 all:
 	$(CC) main.cpp -o apt-add-repository
