@@ -71,7 +71,7 @@ int main(int argc, char *argv[])	{
 		parse_opts(argv[1]);
 	}
 	//Get the repository name from above after all error-cases have been checked for.  Repo name is returned from parse_opts(char*).
-	string entry = "deb http://ppa.launchpad.net/";		//Set the first part of a ppa address
+	string entry = "\ndeb http://ppa.launchpad.net/";		//Set the first part of a ppa address
 	entry += repository;					//Concatenate the repository we want
 	entry += "/ubuntu ";					//Apparently PPAs were never made to leave the Ubuntu domain... Not anymore!
 	entry += release;					//Specify what version you want, since we aren't on Ubuntu
